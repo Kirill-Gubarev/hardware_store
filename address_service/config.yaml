@@ -1,0 +1,11 @@
+service:
+  host: "127.0.0.1"
+  port: "45446"
+  apiKey: ${_2GIS_API_KEY}
+
+database:
+  user: "postgres"
+  password: ${POSTGRES_PASSWORD}
+  host: "127.0.0.1"
+  port: "5432"
+  dbname: "address_service_db"
