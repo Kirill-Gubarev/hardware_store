@@ -1,0 +1,10 @@
+service:
+  host: "127.0.0.1"
+  port: "45447"
+
+database:
+  user: "postgres"
+  password: ${POSTGRES_PASSWORD}
+  host: "127.0.0.1"
+  port: "5432"
+  dbname: "user_service_db"

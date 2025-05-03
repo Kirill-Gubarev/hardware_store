@@ -1,2 +1,2 @@
-DELETE FROM products;
-DELETE FROM units;
+TRUNCATE TABLE products;
+TRUNCATE TABLE units;

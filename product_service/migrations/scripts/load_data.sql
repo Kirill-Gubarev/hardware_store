@@ -8,8 +8,8 @@ CREATE TEMP TABLE temp_products (
     unit_name VARCHAR(255)
 );
 
-\copy temp_units(name) FROM '../data/units.csv' DELIMITER ',' CSV HEADER;
-\copy temp_products(name, description, unit_name) FROM '../data/products.csv' DELIMITER ',' CSV HEADER;
+\copy temp_units(name) FROM 'data/units.csv' DELIMITER ',' CSV HEADER;
+\copy temp_products(name, description, unit_name) FROM 'data/products.csv' DELIMITER ',' CSV HEADER;
 
 INSERT INTO units(name)
 SELECT name
