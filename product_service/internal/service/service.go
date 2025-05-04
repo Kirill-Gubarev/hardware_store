@@ -27,15 +27,15 @@ func routesRun(){
 
 	var r = gin.Default()
 
-	r.GET("/units/:id", GetUnit)
-	r.GET("/units", GetUnits)
-	r.POST("/units", CreateUnit)
-	r.DELETE("/units/:id", DeleteUnit)
+	r.GET("/api/units/:id", GetUnit)
+	r.GET("/api/units", GetUnits)
+	r.POST("/api/units", CreateUnit)
+	r.DELETE("/api/units/:id", DeleteUnit)
 
-	r.GET("/products/:id", GetProduct)
-	r.GET("/products", GetProducts)
-	r.POST("/products", CreateProduct)
-	r.DELETE("/products/:id", DeleteProduct)
+	r.GET("/api/products/:id", GetProduct)
+	r.GET("/api/products", GetProducts)
+	r.POST("/api/products", CreateProduct)
+	r.DELETE("/api/products/:id", DeleteProduct)
 
 	r.Run(cfg.Host + ":" + cfg.Port)
 }

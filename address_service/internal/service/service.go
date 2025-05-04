@@ -29,10 +29,10 @@ func routesRun(){
 
 	var r = gin.Default()
 
-	r.GET("/suggest", SuggestAddress)
-	r.GET("/address/:id", GetAddress)
-	r.GET("/distance", GetDistance)
-	r.POST("/address", CreateAddress)
+	r.GET("/api/suggest", SuggestAddress)
+	r.GET("/api/address/:id", GetAddress)
+	r.GET("/api/distance", GetDistance)
+	r.POST("/api/address", CreateAddress)
 
 	APIKey = cfg.APIKey
 	r.Run(cfg.Host + ":" + cfg.Port)

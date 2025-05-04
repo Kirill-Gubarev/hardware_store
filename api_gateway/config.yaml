@@ -1,0 +1,15 @@
+service:
+  host: "0.0.0.0"
+  port: "45444"
+
+productService:
+  host: "127.0.0.1"
+  port: "45445"
+
+addressService:
+  host: "127.0.0.1"
+  port: "45446"
+
+userService:
+  host: "127.0.0.1"
+  port: "45447"

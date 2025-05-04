@@ -27,19 +27,19 @@ func routesRun(){
 
 	var r = gin.Default()
 
-	r.GET("/roles/:id", GetRole)
-	r.GET("/roles", GetRoles)
-	r.POST("/roles", CreateRole)
-	r.DELETE("/roles/:id", DeleteRole)
+	r.GET("/api/roles/:id", GetRole)
+	r.GET("/api/roles", GetRoles)
+	r.POST("/api/roles", CreateRole)
+	r.DELETE("/api/roles/:id", DeleteRole)
 
-	r.GET("/users/:id", GetUser)
-	r.GET("/users", GetUsers)
-	r.POST("/users", CreateUser)
-	r.DELETE("/users/:id", DeleteUser)
+	r.GET("/api/users/:id", GetUser)
+	r.GET("/api/users", GetUsers)
+	r.POST("/api/users", CreateUser)
+	r.DELETE("/api/users/:id", DeleteUser)
 
-	r.POST("/login", LoginSession)
-	r.POST("/logout", LogoutSession)
-	r.POST("/verify", VerifySession)
+	r.POST("/api/login", LoginSession)
+	r.POST("/api/logout", LogoutSession)
+	r.POST("/api/verify", VerifySession)
 
 	r.Run(cfg.Host + ":" + cfg.Port)
 }
